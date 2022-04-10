@@ -1,0 +1,83 @@
+package com.xuananh.demo.model;
+
+import javax.annotation.Generated;
+
+public class Student {
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.8970178+07:00", comments="Source field: students.id")
+    private Integer id;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.900021+07:00", comments="Source field: students.code")
+    private String code;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.name")
+    private String name;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.address")
+    private String address;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.phone")
+    private String phone;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.grade_id")
+    private Integer gradeId;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.900021+07:00", comments="Source field: students.id")
+    public Integer getId() {
+        return id;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.900021+07:00", comments="Source field: students.id")
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.code")
+    public String getCode() {
+        return code;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.code")
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.name")
+    public String getName() {
+        return name;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.name")
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.address")
+    public String getAddress() {
+        return address;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.address")
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.phone")
+    public String getPhone() {
+        return phone;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.phone")
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.grade_id")
+    public Integer getGradeId() {
+        return gradeId;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9010211+07:00", comments="Source field: students.grade_id")
+    public void setGradeId(Integer gradeId) {
+        this.gradeId = gradeId;
+    }
+}

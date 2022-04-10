@@ -1,0 +1,51 @@
+package com.xuananh.demo.service.grade;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.xuananh.demo.dto.GradeDto;
+import com.xuananh.demo.model.Grade;
+import com.xuananh.demo.repository.GradeMapper;
+@Service
+public class GradeService implements IGradeService {
+	
+	@Autowired
+	private GradeMapper gradeMapper;
+
+	@Override
+	public List<Grade> findAll() {
+		// TODO Auto-generated method stub
+		return gradeMapper.findAll();
+	}
+
+	@Override
+	public Optional<Grade> findById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void save(Grade t) {
+		// TODO Auto-generated method stub
+		return g
+	}
+
+
+	@Override
+	public void deleteById(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Grade save(GradeDto gradeDto) {
+		Grade grade = new Grade();
+		grade.setName(gradeDto.getName());
+		save(grade);
+		return grade;
+	}	
+
+}

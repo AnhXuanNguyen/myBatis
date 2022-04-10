@@ -1,0 +1,8 @@
+package com.xuananh.demo.service.student;
+
+import com.xuananh.demo.model.Student;
+import com.xuananh.demo.service.IGeneralService;
+
+public interface IStudentService extends IGeneralService<Student> {
+
+}

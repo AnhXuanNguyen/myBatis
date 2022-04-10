@@ -1,0 +1,36 @@
+package com.xuananh.demo.service.grade;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.xuananh.demo.model.Grade;
+@Service
+public class GradeService implements IGradeService {
+
+	@Override
+	public List<Grade> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<Grade> findById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Grade save(Grade t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

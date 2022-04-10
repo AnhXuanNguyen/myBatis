@@ -1,0 +1,31 @@
+package com.xuananh.demo.model;
+
+import javax.annotation.Generated;
+
+public class Grade {
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9210295+07:00", comments="Source field: grades.id")
+    private Integer id;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9210295+07:00", comments="Source field: grades.name")
+    private String name;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9210295+07:00", comments="Source field: grades.id")
+    public Integer getId() {
+        return id;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9210295+07:00", comments="Source field: grades.id")
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9210295+07:00", comments="Source field: grades.name")
+    public String getName() {
+        return name;
+    }
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9210295+07:00", comments="Source field: grades.name")
+    public void setName(String name) {
+        this.name = name;
+    }
+}

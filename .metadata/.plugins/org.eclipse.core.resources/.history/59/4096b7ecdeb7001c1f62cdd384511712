@@ -1,0 +1,48 @@
+package com.xuananh.demo.repository;
+
+import java.sql.JDBCType;
+import javax.annotation.Generated;
+import org.mybatis.dynamic.sql.AliasableSqlTable;
+import org.mybatis.dynamic.sql.SqlColumn;
+
+public final class StudentDynamicSqlSupport {
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9050202+07:00", comments="Source Table: students")
+    public static final Student student = new Student();
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9060178+07:00", comments="Source field: students.id")
+    public static final SqlColumn<Integer> id = student.id;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9060178+07:00", comments="Source field: students.code")
+    public static final SqlColumn<String> code = student.code;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9060178+07:00", comments="Source field: students.name")
+    public static final SqlColumn<String> name = student.name;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9060178+07:00", comments="Source field: students.address")
+    public static final SqlColumn<String> address = student.address;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9060178+07:00", comments="Source field: students.phone")
+    public static final SqlColumn<String> phone = student.phone;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9060178+07:00", comments="Source field: students.grade_id")
+    public static final SqlColumn<Integer> gradeId = student.gradeId;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9060178+07:00", comments="Source Table: students")
+    public static final class Student extends AliasableSqlTable<Student> {
+        public final SqlColumn<Integer> id = column("id", JDBCType.INTEGER);
+
+        public final SqlColumn<String> code = column("code", JDBCType.VARCHAR);
+
+        public final SqlColumn<String> name = column("name", JDBCType.VARCHAR);
+
+        public final SqlColumn<String> address = column("address", JDBCType.VARCHAR);
+
+        public final SqlColumn<String> phone = column("phone", JDBCType.VARCHAR);
+
+        public final SqlColumn<Integer> gradeId = column("grade_id", JDBCType.INTEGER);
+
+        public Student() {
+            super("students", Student::new);
+        }
+    }
+}

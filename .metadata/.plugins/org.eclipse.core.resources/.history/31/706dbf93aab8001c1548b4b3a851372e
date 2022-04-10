@@ -1,0 +1,27 @@
+package com.xuananh.demo.controller.grade.student;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.xuananh.demo.model.Student;
+import com.xuananh.demo.service.student.IStudentService;
+
+@Controller
+@RequestMapping("/student")
+public class StudentController {
+	@Autowired
+	private IStudentService studentService;
+	
+	@GetMapping
+	public ModelAndView findAll() {
+		ModelAndView modelAndView = new ModelAndView("student/students");
+		List<Student> students = studentService.findAll();
+		modelAndView.addObject("students", students));
+		return modelAndView;
+	}
+}

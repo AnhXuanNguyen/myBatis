@@ -1,0 +1,5 @@
+package com.xuananh.demo.service;
+
+public interface IGeneralService {
+
+}

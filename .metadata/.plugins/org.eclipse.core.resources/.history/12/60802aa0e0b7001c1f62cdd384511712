@@ -1,0 +1,5 @@
+package com.xuananh.demo.service.student;
+
+public interface IStudentService {
+
+}

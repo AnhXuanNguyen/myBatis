@@ -1,0 +1,11 @@
+package com.xuananh.demo.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface IGenneralRepository<T> {
+	List<T> findAll();
+	T findById(Integer id);
+	void save(T t);
+	void deleteById(Integer id);
+}

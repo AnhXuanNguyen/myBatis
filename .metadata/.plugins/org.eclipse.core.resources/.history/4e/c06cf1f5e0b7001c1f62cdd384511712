@@ -1,0 +1,6 @@
+package com.xuananh.demo.repository;
+
+import com.xuananh.demo.model.Student;
+
+public interface StudentMapper extends IGenneralRepository<Student> {
+}

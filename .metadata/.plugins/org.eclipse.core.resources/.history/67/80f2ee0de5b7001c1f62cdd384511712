@@ -1,0 +1,21 @@
+package com.xuananh.demo.controller.grade;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.xuananh.demo.service.grade.IGradeService;
+
+@Controller
+public class GradeController {
+	@Autowired
+	private IGradeService gradeService;
+	
+	@GetMapping
+	public ModelAndView findAll() {
+		ModelAndView modelAndView = new ModelAndView("grade/grades");
+		modelAndView.addObject("grades", gradeService.findAll());
+		return modelAndView;
+	}
+}

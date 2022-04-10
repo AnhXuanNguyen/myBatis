@@ -1,0 +1,5 @@
+package com.xuananh.demo.controller.grade.student;
+
+public class StudentController {
+
+}

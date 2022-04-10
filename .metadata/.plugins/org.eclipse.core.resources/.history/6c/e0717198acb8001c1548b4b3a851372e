@@ -1,0 +1,53 @@
+package com.xuananh.demo.service.student;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.xuananh.demo.dto.StudentResponse;
+import com.xuananh.demo.model.Student;
+import com.xuananh.demo.repository.GradeMapper;
+import com.xuananh.demo.repository.StudentMapper;
+@Service
+public class StudentService implements IStudentService {
+	
+	@Autowired
+	private StudentMapper studentMapper;
+	@Autowired
+	private GradeMapper gradeMapper;
+
+	@Override
+	public List<Student> findAll() {
+		return studentMapper.findAll();
+	}
+
+	@Override
+	public Optional<Student> findById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void save(Student t) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void deleteById(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<StudentResponse> findAllStudent() {
+		List<Student> student = studentMapper.findAll();
+		student.stream()
+	}
+	
+	public static StudentResponse toStudentResponse(Student student) {
+		StudentResponse studentResponse = new 
+	}
+
+}

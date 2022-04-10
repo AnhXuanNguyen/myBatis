@@ -1,0 +1,28 @@
+package com.xuananh.demo.repository;
+
+import java.sql.JDBCType;
+import javax.annotation.Generated;
+import org.mybatis.dynamic.sql.AliasableSqlTable;
+import org.mybatis.dynamic.sql.SqlColumn;
+
+public final class GradeDynamicSqlSupport {
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9210295+07:00", comments="Source Table: grades")
+    public static final Grade grade = new Grade();
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9220197+07:00", comments="Source field: grades.id")
+    public static final SqlColumn<Integer> id = grade.id;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9220197+07:00", comments="Source field: grades.name")
+    public static final SqlColumn<String> name = grade.name;
+
+    @Generated(value="org.mybatis.generator.api.MyBatisGenerator", date="2022-04-09T15:26:47.9220197+07:00", comments="Source Table: grades")
+    public static final class Grade extends AliasableSqlTable<Grade> {
+        public final SqlColumn<Integer> id = column("id", JDBCType.INTEGER);
+
+        public final SqlColumn<String> name = column("name", JDBCType.VARCHAR);
+
+        public Grade() {
+            super("grades", Grade::new);
+        }
+    }
+}

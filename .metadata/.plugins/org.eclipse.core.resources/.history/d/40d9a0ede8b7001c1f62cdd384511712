@@ -1,0 +1,36 @@
+package com.xuananh.demo.service.student;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.xuananh.demo.model.Student;
+@Service
+public class StudentService implements IStudentService {
+
+	@Override
+	public List<Student> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<Student> findById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Student save(Student t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

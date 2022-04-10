@@ -1,0 +1,6 @@
+package com.xuananh.demo.repository;
+
+import com.xuananh.demo.model.Grade;
+
+public interface GradeMapper extends IGenneralRepository<Grade> {
+}

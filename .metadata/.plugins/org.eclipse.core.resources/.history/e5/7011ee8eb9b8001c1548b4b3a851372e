@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuananh.demo.repository.StudentMapper">
+  <resultMap id="BaseResultMap" type="com.xuananh.demo.model.Student">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="grade_id" jdbcType="INTEGER" property="gradeId" />
+  </resultMap>
+  <select id="findAll" resultMap="BaseResultMap">
+  	select * from students
+  </select>
+  <insert id="save" parameterType="Student">
+  	insert into students (name, code, address, phone, grade_id) value (#{name}, #{code}, #{address}, #{phone}, #{gradeId})
+  </insert>
+</mapper>

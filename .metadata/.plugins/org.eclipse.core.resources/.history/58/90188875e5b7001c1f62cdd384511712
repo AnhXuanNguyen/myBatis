@@ -1,0 +1,5 @@
+package com.xuananh.demo.dto;
+
+public class GradeDto {
+
+}

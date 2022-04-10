@@ -1,0 +1,9 @@
+package com.xuananh.demo.repository;
+
+import com.xuananh.demo.model.Grade;
+import com.xuananh.demo.model.GradeExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+public interface GradeMapper {
+}
